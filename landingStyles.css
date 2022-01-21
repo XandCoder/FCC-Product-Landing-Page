@@ -1,0 +1,412 @@
+/**********************************
+*
+* Author: Sandra Suarez AKA
+*		  XandCoder
+* Date: 1.9.22
+* FCC Landing Page
+*
+**********************************/
+
+/* Cardo Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+/* Roboto Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Clear formatting*/
+*   {
+    box-sizing: border-box;
+}
+
+body    {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+}
+
+h3  {
+    font-family: 'Cardo', serif;
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+    margin: 0rem;
+}
+
+#mainContainer{
+    max-width: 100rem; /*max size of the content*/
+    margin: 0 auto; /*centers div for margins*/
+}
+
+
+/*-- Navigation Styles --*/
+#header-img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.8rem;
+}
+#header-img a{
+    cursor: pointer;
+}
+#nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 4rem;
+    background-color: #D1925C;
+}
+#nav-bar a{    
+    color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+    height: 3.68rem;
+    line-height: 3.68rem;
+    background-color:#D1925C;
+    cursor: pointer;
+}
+#navItems  a {
+    padding-right: 1rem;
+}
+#navItems   {
+    display: inline-block;
+}
+/*TODO change color of menu items when clicked */
+
+
+/*   HERO PAGE   */
+#heroContainer  {
+    background-image: url(images/casita2.jpeg);
+    min-height: 100vh;
+    /* You must set a specified height */
+    background-position: center; 
+    /* Center the image */
+    background-repeat: no-repeat; 
+    /* Do not repeat the image */
+    background-size: cover; 
+    /* Resize the background image to cover the entire container */
+}
+#heroNameCard   {
+    width: 100%;
+    height: 100vh;
+    padding: 0rem 2rem;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0.25));
+}
+.heroHeading    {
+    font-size: 3rem;
+    padding-top: 10rem;
+    width: 50%;
+}
+#heroName   {
+    color: #A63D10; 
+    font-weight: bold;   
+    font-family: 'Cardo', serif;
+    font-size: 2.5rem;
+}
+#heroNameCard p{
+    width: 33%;
+}
+
+
+/* Donate Button styles */
+.donateButton  {
+    background-color: #A63D10;
+    color: #ffffff;
+    padding: .3rem .9rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: .12rem .25rem .50rem #644242;
+    margin-top: 2rem;
+}
+.donateButton:active {
+    box-shadow: 0 0 0;
+    transition: .2s ease-in;
+}
+
+
+/*   ALL OTHER CONTAINERS   */
+.otherContainers    {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+/*   ABOUT PAGE   */
+#historyContainer   {
+    background-color: #D1925C;
+}
+.historyCard    {
+    width: 30rem;
+    background-color: #D1925C;
+    color: #ffffff;
+    padding: 6rem 2rem 5rem;
+    text-align: left;
+}
+
+
+/*   DONATION PAGE   */
+#donationCard   {
+    width:  48rem;
+    padding-top: 5rem;
+}
+#videoCard  {
+    width: 24rem;
+    padding-top: 10rem;
+}
+#video{
+    width: auto;
+    /*height: auto;*/
+}
+
+
+/*   DONATION LEVELS PAGE   */
+.dLevelCard  {
+    background-color: #D1925C;
+    color: #ffffff;
+    padding: 2rem;
+    max-width: 18.75rem;
+    text-align: center;
+    border-radius: .5rem;  
+    margin: 9rem 3rem 10rem;  
+}
+.donationItems  {
+    width: 15rem;
+}
+.donationCard p{
+    padding-top: .5rem;
+    text-align: left;
+}
+.giftButton  {
+    margin-top: 1rem;
+    background-color: #A63D10;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    padding: 1.25rem 1rem 1.25rem 1rem;
+    cursor: pointer;
+    box-shadow: .25rem .5rem .75rem #644242;
+}
+.giftButton:active {
+    box-shadow: 0 0 0;
+    transition: .2s ease-in;
+}
+
+
+/*   FOOTER PAGE   */
+#darkFooter {
+    background-color: #D1925C;
+    color: #ffffff;
+}
+.footerCard {
+    background-color: #D1925C;
+    width: 24rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+#signature  {
+    padding-top: 5rem;
+}
+#submit {
+    background-color: #A63D10;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: .12rem .12rem .50rem #644242;
+}
+#submit:active  {
+    box-shadow: 0 0 0;
+    transition: .2s ease-in-out;
+}
+
+
+/* Media Query 4k Screen 1441 - 2560 */
+/*@media (min-width: 1441px)  {
+    #nav-bar    {
+        max-width: 1440px;
+        align-items: center;
+    }
+} */
+
+/* Media Query Small Laptops 769 - 1024 */
+@media (min-width: 769px) and (max-width: 1024px)  {
+    h3   {
+        font-size: 2rem;
+        padding: 1rem 0rem;
+    }
+    /*Hero page*/
+    .heroHeading    {
+        font-size: 2.75rem;
+    }
+    .heroHeading    {
+        padding-top: 6rem;
+    }
+    /*About page*/
+    #historyContainer   {
+        padding: 5rem 0rem 1rem;
+    }
+    .historyCard    {
+        padding: 0rem 1rem 1rem;
+        width: 28rem;
+    }
+    /*Donation page*/
+    #videoCard  {
+        width: 24rem;
+        padding: 9rem 1rem 0rem 2rem;
+    }
+    #donationCard   {
+        width: 24rem;
+        padding: 7rem 2rem 0rem 1rem;
+    }
+    /*Donation Levels page*/
+    #donationLevelsContainer    {
+        padding-top: 7rem;
+    }
+    .dLevelCard {
+        margin: 1rem 0 3rem;
+    }
+    /*Footer page*/
+    .footerCard {
+        padding-top: 4rem;
+    }
+}
+
+/* Media Query Tablets 426 - 768 */
+@media (min-width: 426px) and (max-width: 768px)  {
+    h3   {
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+    }
+    /*Hero page*/
+    .heroHeading    {
+        font-size: 2.25rem;
+        padding-top: 6rem;
+        width: 75%;
+    }
+    #heroName   {
+        font-size: 2rem;
+        padding: 1.5rem 0rem;
+    }
+    /*About page*/
+    #historyContainer   {
+        padding: 5rem 0rem 1rem;
+    }
+    .historyCard    {
+        padding: 0rem 2rem 1rem;
+    }
+    /*Donation page*/
+    #videoCard  {
+    width: 21rem;
+    padding: 7rem 2rem 0rem;
+    }
+    #video{
+    width: auto;
+    height: 350px;
+    margin: 0 auto;
+    }
+    #donationCard   {
+    width:  21rem;
+    padding: 6rem 2rem 0rem;
+    }
+    /*Donation Levels page*/
+    #donationLevelsContainer    {
+        padding-top: 7rem;
+    }
+    .dLevelCard {
+        margin: 1rem 0 3rem;
+    }
+    /*Footer page*/
+    #darkFooter {
+        padding-top: 5rem;
+    }
+    .footerCard {
+        padding: 0 0 1rem;
+    }
+    #form   {
+        padding: 0 2rem;
+    }
+    #signature  {
+        padding-top: 1rem;
+    }
+}
+
+/* Media Query Phones 320 - 425*/
+@media (min-width: 320px) and (max-width: 425px)  {     
+    p {
+    font-size: .75rem;
+    }
+    h3   {
+        font-size: 1.25rem;
+        padding: 1rem 0rem;
+    }
+    /*Navigation*/
+    #nav-bar a   {
+        font-size: .75rem;
+        padding-right: .5rem;
+    }
+    /*Hero page*/
+    .heroHeading    {
+        font-size: 2rem;
+        width: 100%;
+        padding-top: 5rem;
+    }
+    #heroName   {
+        font-size: 1.46rem;
+        padding: 2.5rem 0rem;
+    }
+    /*About page*/
+    .historyCard    {
+    width: 18rem;
+    padding: 1rem 1rem 1rem;
+    text-align: left;
+    }
+    #historyContainer   {
+        padding: 5rem 0rem 1rem;
+    }
+    /*Donations page*/
+    #videoCard  {
+    width: 18rem;
+    padding: 6rem 2rem 0rem;
+    }
+    #video{
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+    }
+    #donationCard   {
+    width:  18rem;
+    padding: 3rem 2rem 0rem;
+    }
+    /*Donation Levels page*/
+    #donationLevelsContainer    {
+        padding-top: 7rem;
+    }
+    .dLevelCard {
+        margin: 1rem 0 3rem;
+    }
+    /*Footer page*/
+    #darkFooter {
+        padding-top: 5rem;
+    }
+    .footerCard {
+        padding: 0 0 1rem;
+    }
+    #form   {
+        padding: 0 2rem;
+    }
+    #signature  {
+        padding-top: 1rem;
+    }
+}

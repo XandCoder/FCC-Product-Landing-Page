@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="landingStyles.css">
+
+    <title>Aguirre Historical Society</title>
+
+</head>
+
+<!--U14 My product landing page should have at least one media query. -->
+
+<!--DONE U15 My product landing page should utilize CSS flexbox at least once. -->
+
+<body>
+    
+    <div id="mainContainer">
+
+        <header id="header">
+            <!--DONE U3 Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
+            <!--DONE U13 The navbar should always be at the top of the viewport. -->
+            <nav id="nav-bar">
+        
+                <!--DONE U2 Image within the header element with a corresponding id="header-img". Company Logo -->
+                <div id="navLogo">
+                    <a href="#heroContainer"><img id="header-img" src="images/AHSLogoTransp.png"
+                            alt="Logo image and home link"></a>
+                </div>
+        
+                <!--DONE U4 Three clickable elements inside the nav element, each with the class nav-link. -->
+                <!--DONE U5 When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+        
+                <div id="navItems">
+                    <a href="#heroContainer" class="nav-link">Home</a>
+                    <a href="#historyContainer" class="nav-link">About</a>
+                    <a href="#donationsContainer" class="nav-link">Donations</a>
+                    <a href="#darkFooter" class="nav-link">Contact Us</a>
+                </div>
+        
+            </nav>
+        </header>
+
+        <!--   Hero Page   --> 
+        <section id="heroContainer">
+            <article id="heroNameCard">
+                    <h2 class="heroHeading">
+                        Help us bring our neighborhood back to life!
+                    </h2>
+                    <h3 id="heroName">Aguirre Historical Society</h3>
+                    <p>
+                        We are working to restore and preserve this historical area. Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Harum, blanditiis.
+                    </p>
+                    
+                    <a href="#donationLevelsContainer"><button class="donateButton">Donate now</button></a>
+            </article>        
+        </section>
+
+        <!--   About Page   -->
+        <section id="historyContainer" class="otherContainers">
+            <article class="historyCard">
+                <h3>Our History</h3>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, est. Neque quod quam architecto quis fuga ipsa
+                    earum consectetur laudantium, placeat aperiam? Praesentium reprehenderit inventore quisquam dicta obcaecati quam
+                    modi.
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, beatae necessitatibus voluptatum dolorum qui totam,
+                    libero cum inventore provident perspiciatis, molestiae eveniet quasi itaque tenetur aliquam architecto alias!
+                    Doloremque, hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eos perspiciatis tempora dolorem cum? Animi
+                    perferendis, velit laborum accusantium tempora.
+                </p>
+            </article>
+
+            <article class="historyCard">
+                <h3>Our Mission</h3>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci veritatis eligendi alias iste maiores facilis
+                    aliquid quam possimus! Repudiandae eligendi sapiente a, tempora unde voluptatum. Molestiae dolore laboriosam fuga
+                    facilis.
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum culpa saepe iure corrupti veritatis reprehenderit
+                    non expedita qui. Quis voluptate distinctio hic iusto, nam veniam ex quod aperiam ab neque! Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit.
+                </p>
+                
+                <a href="#donationLevelsContainer"><button class="donateButton">Donate now</button></a>
+
+            </article>        
+        </section>
+
+        <!--   Donation Page   -->
+        <section id="donationsContainer" class="otherContainers">
+            <article id="videoCard">
+                <!--DONE U6 I can watch an embedded product video with id="video". -->
+                <video id="video" controls autoplay loop height="400">
+                    <source src="images/ProductVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+
+            <article id="donationCard">
+                <h3>DONATIONS</h3>
+                
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quia repudiandae maiores, dolore neque modi nihil
+                    necessitatibus animi ea cumque. At quam cum earum praesentium architecto temporibus magni provident magnam!
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quos voluptatibus autem, alias possimus, dicta, ad a
+                    doloribus quidem sint quis deleniti saepe quibusdam delectus consectetur reiciendis molestiae. Nulla, dicta.
+                </p>
+                
+                <a href="#donationLevelsContainer"><button class="donateButton">Donate now</button></a>
+            </article>
+            
+        </section>
+
+        <!--   Donation Levels Page   -->
+        <section id="donationLevelsContainer" class="otherContainers">
+            <article class="dLevelCard">
+                <img class="donationItems" src="images/Donation1.jpg" alt="Tote bag donation gift.">
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem temporibus sequi.
+                </p>
+                
+                <button class="giftButton">
+                    $50
+                </button>
+            </article>
+
+            <article class="dLevelCard">
+                <img class="donationItems" src="images/Donation2.jpg" alt="Coasters donation gift.">
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis earum obcaecati fugiat.
+                </p>
+                
+                <button class="giftButton">
+                    $35
+                </button>
+            </article>
+
+            <article class="dLevelCard">
+                <img class="donationItems" src="images/Donation3.jpg" alt="Mouse pad donation gift.">
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus temporibus odit esse.
+                </p>
+                
+                <button class="giftButton">
+                    $15
+                </button>
+            </article>
+        
+        </section>
+
+        <!--   Footer Page   -->
+        <footer id="darkFooter" class="otherContainers">
+            <article class="footerCard">
+                <h3>Contact</h3>
+                <p>Aguirre Historical Society</p>
+                <p>100 Paim Tree Way</p>
+                <p>Aguirre, Puerto Rico 00704</p>
+                <p>787-824-5555</p>
+            </article>
+
+            <article class="footerCard">
+                <h3>Follow</h3>
+                <a href="#"><img src="images/FacebookButton.png" alt="Facebook Button image link"></a>
+                <a href="#"><img src="images/TwitterButton.png" alt="Twitter Button image link"></a>
+                <a href="#"><img src="images/InstagramButton.png" alt="Instagram Button image link"></a>
+            </article>
+
+            <article class="footerCard">
+                <h3>Newsletter</h3>
+
+                <!--DONE U7 Landing page has a form element with a corresponding id="form". -->
+                <!--DONE U8 Within the form, there is an input field with id="email" where I can enter an email address. -->
+                <!--DONE U12 When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <label id="email-label">
+                        <p class="questions">Subscribe to get the latest news and updates on the renovation:</p>
+                        <!--DONE U9 The #email input field should have placeholder text to let the user know what the field is for. -->
+                        <!--DONE U10 The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+                        <input id="email" type="email" name="email" maxlength="30" placeholder="Enter your email" required />
+                        <!--DONE U11 Within the form, there is a submit input with a corresponding id="submit". -->
+                        <input id="submit" type="Submit" value="Submit">
+                        <p class="questions">We won't share your information. You can unsubscribe at any time.</p>
+                    </label>
+                </form>
+
+                <p id="signature">&copy; Suarez Designs 2021</p>
+            </article>
+        
+        </footer> 
+    </div> 
+
+    <!--FCC Test Script-->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
