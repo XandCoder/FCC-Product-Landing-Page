@@ -2,7 +2,7 @@
 *
 * Author: Sandra Suarez AKA
 *		  XandCoder
-* Date: 1.9.22
+* Date: 1.21.22
 * FCC Landing Page
 *
 **********************************/
@@ -80,7 +80,7 @@ h3  {
 
 /*   HERO PAGE   */
 #heroContainer  {
-    background-image: url(images/casita2.jpeg);
+    background-image: url(casita2.jpeg);
     min-height: 100vh;
     /* You must set a specified height */
     background-position: center; 
